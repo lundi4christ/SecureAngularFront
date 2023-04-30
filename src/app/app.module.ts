@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PanelboxComponent } from './panelbox/panelbox.component';
 
 
 
@@ -23,7 +24,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ToptitleComponent,
     SidenavComponent,
     SidenavnextComponent,
-    DatatableviewComponent
+    DatatableviewComponent,
+    PanelboxComponent
 
   ],
   imports: [
