@@ -9,8 +9,9 @@
 
 .toptitle > .dashboardtitle {
     position: fixed;
-    top: 9%;
+    top: 8.5%;
     left: 18%;
     font-weight: bold;
     color: #0078D4;
+    font-size: medium;
 }
