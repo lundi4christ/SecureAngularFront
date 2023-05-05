@@ -1,0 +1,36 @@
+@media screen and (max-width: 600px) {
+  .col1,.col2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.form1{
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 300px;
+  width: 1000px;
+  height: 300px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+input{
+  width: 250px;
+  left: 50%;
+}
+
+.col1{
+  float: left;
+  width: 15%;
+  margin-left: 60px;
+}
+
+.col2{
+  float: left;
+  /*width: 30%*/
+}
+
+.form1 > .horizontal {
+  top: 70%;
+}
