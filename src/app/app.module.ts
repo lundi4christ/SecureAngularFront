@@ -13,6 +13,7 @@ import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PanelboxComponent } from './panelbox/panelbox.component';
+import { FormsComponent } from './forms/forms.component';
 
 
 
@@ -25,7 +26,8 @@ import { PanelboxComponent } from './panelbox/panelbox.component';
     SidenavComponent,
     SidenavnextComponent,
     DatatableviewComponent,
-    PanelboxComponent
+    PanelboxComponent,
+    FormsComponent
 
   ],
   imports: [
