@@ -14,6 +14,7 @@ import {ModalModule} from 'ngx-bootstrap/modal';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PanelboxComponent } from './panelbox/panelbox.component';
 import { FormsComponent } from './forms/forms.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -37,7 +38,8 @@ import { FormsComponent } from './forms/forms.component';
     ReactiveFormsModule,
     FormsModule,
     ModalModule.forRoot(),
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
