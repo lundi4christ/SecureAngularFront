@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px) {
-  .col1,.col2, input[type=submit] {
+  .col1,.col2, input[type=submit], .submitbutton, .cancelbutton {
     width: 100%;
     margin-top: 0;
   }
@@ -33,4 +33,27 @@ input{
 
 .form1 > .horizontal {
   top: 70%;
+}
+
+.submitbutton {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  width: 50px;
+}
+
+.submitbutton button{
+  width: 100px;
+  border-radius: 5px;
+}
+
+.cancelbutton {
+  position: absolute;
+  top: 80%;
+  left: 82%;
+}
+
+.cancelbutton button {
+  width: 100px;
+  border-radius: 5px;
 }
