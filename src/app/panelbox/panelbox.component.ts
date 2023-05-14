@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./panelbox.component.css']
 })
 export class PanelboxComponent implements OnInit {
-
+  title = 'Dashboards';
   constructor() { }
 
   ngOnInit(): void {

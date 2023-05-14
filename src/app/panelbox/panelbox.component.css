@@ -302,6 +302,11 @@
   border-radius: 10px;
 }
 
+.textalign{
+  margin-top: 30px;
+  text-align: center;
+}
+
 .panelbox7{
   position: fixed;
   margin-top: 300px;

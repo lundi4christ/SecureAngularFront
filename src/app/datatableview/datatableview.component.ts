@@ -14,6 +14,8 @@ import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class DatatableviewComponent implements OnInit {
 
+  title = 'Users';
+
   closeResult: string;
 
   constructor(private service: UsersService, private fb: FormBuilder, private modalService: BsModalService,
