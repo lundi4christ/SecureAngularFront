@@ -5,6 +5,7 @@ import { Subject} from 'rxjs';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {ActivatedRoute} from "@angular/router";
 
 
 @Component({
@@ -19,7 +20,7 @@ export class DatatableviewComponent implements OnInit {
   closeResult: string;
 
   constructor(private service: UsersService, private fb: FormBuilder, private modalService: BsModalService,
-              private modalngService: NgbModal) {
+              private modalngService: NgbModal, private route: ActivatedRoute) {
   }
 
   userdetails: User[];
@@ -40,6 +41,8 @@ export class DatatableviewComponent implements OnInit {
   dtTrigger: Subject<any> = new Subject<any>();
 
   ngOnInit(): void {
+    // this.title = this.route.snapshot.data.title;
+
     this.getUsersDetails();
 
     this.saveuserForm = this.fb.group({

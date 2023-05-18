@@ -18,7 +18,6 @@ export class ToptitleComponent implements OnInit {
         this.title = this.getTitle(this.router.routerState, this.router.routerState.root).join(' | ');
       });
   }
-
   // tslint:disable-next-line:typedef
   getTitle(state, parent) {
     const data = [];
@@ -29,7 +28,6 @@ export class ToptitleComponent implements OnInit {
     if (state && parent) {
       data.push(...this.getTitle(state, state.firstChild(parent)));
     }
-
     return data;
   }
 
