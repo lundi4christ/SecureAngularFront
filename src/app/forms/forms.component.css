@@ -10,20 +10,40 @@
   margin-top: 120px;
   margin-left: 260px;
   width: 1260px;
-  height: 300px;
+  height: 350px;
   background-color: #FFFFFF;
   border-radius: 5px;
 }
 
+label{
+  font-size: 13.5px;
+  color: #5d5d5d;
+  /*font-family: sans-serif;*/
+}
+
 input{
-  width: 250px;
+  width: 330px;
   left: 50%;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: darkgray;
+}
+
+.circle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #D4F1F4;
+    padding: 10px;
 }
 
 .col1{
   float: left;
   width: 15%;
-  margin-left: 60px;
+  margin-left: 80px;
 }
 
 .col2{
@@ -37,7 +57,7 @@ input{
 
 .submitbutton {
   position: absolute;
-  top: 80%;
+  top: 180%;
   left: 70%;
   width: 50px;
 }
@@ -49,11 +69,21 @@ input{
 
 .cancelbutton {
   position: absolute;
-  top: 80%;
+  top: 180%;
   left: 82%;
 }
 
 .cancelbutton button {
   width: 100px;
   border-radius: 5px;
+}
+
+.hrline{
+  position: relative;
+  top: 15%;
+}
+
+.formcontainer {
+  position: relative;
+  top: 25%;
 }
