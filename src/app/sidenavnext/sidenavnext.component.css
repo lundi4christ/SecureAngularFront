@@ -4,7 +4,22 @@
       height: 100vh;
       margin-left: 45px;
       background-color: #f3f2f1;
+}
 
+.depositlink {
+  margin-top: 20px;
+  padding: 10px;
+  color: #CB6D51;
+}
+
+.depositlink a {
+  text-decoration: none;
+  color: #5d5d5d;
+  font-size: 14.5px;
+}
+
+.depositlink a:hover {
+  background-color: #ADD8E6;
 }
 
 
