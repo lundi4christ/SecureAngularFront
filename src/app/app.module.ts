@@ -15,6 +15,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PanelboxComponent } from './panelbox/panelbox.component';
 import { FormsComponent } from './forms/forms.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DformsComponent } from './dforms/dforms.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogModule } from 'primeng/dialog';
+import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
@@ -28,7 +35,8 @@ import { AppRoutingModule } from './app-routing.module';
     SidenavnextComponent,
     DatatableviewComponent,
     PanelboxComponent,
-    FormsComponent
+    FormsComponent,
+    DformsComponent
 
   ],
   imports: [
@@ -39,7 +47,12 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     ModalModule.forRoot(),
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+/*    DialogModule,
+    MdbCheckboxModule,
+    MdbModalModule*/
   ],
   providers: [],
   bootstrap: [AppComponent]

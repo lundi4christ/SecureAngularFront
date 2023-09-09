@@ -8,18 +8,23 @@
 
 .depositlink {
   margin-top: 20px;
-  padding: 12px;
-  color: #CB6D51;
+  padding: 15px 15px 15px 15px;
+  color: #0078D4;
 }
 
 .depositlink a {
+  display: block;
   text-decoration: none;
   color: #5d5d5d;
   font-size: 14.5px;
 }
 
 .depositlink a:hover {
+  /*display: block;*/
   background-color: #ADD8E6;
 }
 
+#icons1 {
+  color: #0078D4;
+}
 
