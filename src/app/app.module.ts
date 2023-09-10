@@ -16,11 +16,7 @@ import { PanelboxComponent } from './panelbox/panelbox.component';
 import { FormsComponent } from './forms/forms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DformsComponent } from './dforms/dforms.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DialogModule } from 'primeng/dialog';
-import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
-import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
-import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
@@ -47,12 +43,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     FormsModule,
     ModalModule.forRoot(),
     NgbModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatDialogModule,
-/*    DialogModule,
-    MdbCheckboxModule,
-    MdbModalModule*/
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
