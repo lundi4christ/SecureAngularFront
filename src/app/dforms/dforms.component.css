@@ -1,0 +1,13 @@
+.popupform {
+  margin-top: 50px;
+  height: 400px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.formcontainer {
+  width:300px;
+  margin-left: 50px;
+  position: center;
+  align-content: center;
+}
