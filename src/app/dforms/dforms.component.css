@@ -1,13 +1,19 @@
 .popupform {
   margin-top: 50px;
-  height: 400px;
-  width: 200px;
-  border-radius: 25px;
+  height: 300px;
+  width: 50px;
+  border-radius: 50px;
 }
 
 .formcontainer {
-  width:300px;
-  margin-left: 70px;
+  width:400px;
+  margin-left: 50px;
   position: center;
   align-content: center;
+}
+
+input{
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
 }
