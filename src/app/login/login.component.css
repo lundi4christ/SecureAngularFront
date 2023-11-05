@@ -1,0 +1,19 @@
+.background-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Optional: Hide image overflow */
+}
+
+.background-container img {
+  z-index: -1; /* Push the image behind the content */
+  object-fit: cover; /* Adjust image sizing as needed */
+}
+
+.linkfont {
+  color: white;
+  alignment: center;
+  font-size: large;
+  margin-left: 50%;
+  margin-top: 50%;
+}
