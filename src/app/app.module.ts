@@ -16,6 +16,8 @@ import { PanelboxComponent } from './panelbox/panelbox.component';
 import { FormsComponent } from './forms/forms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DformsComponent } from './dforms/dforms.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -32,7 +34,9 @@ import { DformsComponent } from './dforms/dforms.component';
     DatatableviewComponent,
     PanelboxComponent,
     FormsComponent,
-    DformsComponent
+    DformsComponent,
+    LoginComponent,
+    HomeComponent
 
   ],
   imports: [
