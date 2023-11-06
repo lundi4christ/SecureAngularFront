@@ -10,6 +10,39 @@
   object-fit: cover; /* Adjust image sizing as needed */
 }
 
+.logindata{
+  background-color: white;
+  opacity: 60%;
+  width: 300px;
+  height: 400px;
+  margin-left: 600px;
+  margin-top: 130px;
+  border-radius: 10px;
+}
+
+.inputdata{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+input{
+  width: 200px;
+  border-radius: 5px;
+
+}
+
+button{
+  background-color: #0078D4;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+
+}
+
 .linkfont {
   color: white;
   alignment: center;
