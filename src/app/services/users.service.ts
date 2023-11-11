@@ -12,12 +12,12 @@ export class UsersService {
   constructor(private http: HttpClient) {}
 
   getUsersDetails(): Observable<User[]>{
-    return this.http.get<User[]>('http://localhost:8090/users/allUsers')
+    return this.http.get<User[]>('http://localhost:8180/api/auth/alluser')
       .pipe(retry(1), catchError(this.errorHandler));
   }
 
   getUser(id: number): Observable<User> {
-    return this.http.get<User>('http://localhost:8090/users/getUser/' + id );
+    return this.http.get<User>('http://localhost:8180/api/auth/getuser/' + id );
   }
 
   saveUser(theUser): Observable<User>{

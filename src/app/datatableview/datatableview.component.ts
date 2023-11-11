@@ -5,7 +5,7 @@ import { Subject} from 'rxjs';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute} from '@angular/router';
 
 
 @Component({
@@ -46,20 +46,20 @@ export class DatatableviewComponent implements OnInit {
     this.getUsersDetails();
 
     this.saveuserForm = this.fb.group({
-      firstname: [this.saveuser.firstname, Validators.required],
-      lastname: [this.saveuser.lastname, Validators.required],
+      name: [this.saveuser.name, Validators.required],
+      username: [this.saveuser.username, Validators.required],
       email: [this.saveuser.email, Validators.required],
-      address: [this.saveuser.address, Validators.required],
-      state: [this.saveuser.state, Validators.required]
+      password: [this.saveuser.password, Validators.required]
+      // state: [this.saveuser.state, Validators.required]
     });
 
     this.editForm = this.fb.group({
       id: [''],
-      firstname: [''],
-      lastname: [''],
+      name: [''],
+      username: [''],
       email: [''],
-      address: [''],
-      state: ['']
+      password: ['']
+      // state: ['']
     } );
   }
 
@@ -82,11 +82,11 @@ export class DatatableviewComponent implements OnInit {
   saveUser(): void {
     this.saveuser = this.saveuserForm.value;
     const theUser = {
-      firstname: this.saveuserForm.controls.firstname.value,
-      lastname: this.saveuserForm.controls.lastname.value,
+      name: this.saveuserForm.controls.name.value,
+      username: this.saveuserForm.controls.username.value,
       email: this.saveuserForm.controls.email.value,
-      address: this.saveuserForm.controls.address.value,
-      state: this.saveuserForm.controls.state.value
+      password: this.saveuserForm.controls.password.value
+      // state: this.saveuserForm.controls.state.value
     };
     this.service.saveUser(theUser)
       .pipe().subscribe((response) => {
@@ -151,11 +151,11 @@ export class DatatableviewComponent implements OnInit {
     });
     this.editForm.patchValue( {
       id: user.id,
-      firstname: user.firstname,
-      lastname: user.lastname,
+      firstname: user.name,
+      lastname: user.username,
       email: user.email,
-      address: user.address,
-      state: user.state
+      address: user.password
+      // state: user.state
     });
   }
 
@@ -165,11 +165,11 @@ export class DatatableviewComponent implements OnInit {
       backdrop: 'static',
       size: 'md'
     });
-    document.getElementById('fname').setAttribute('value', user.firstname);
-    document.getElementById('lname').setAttribute('value', user.lastname);
-    document.getElementById('addr').setAttribute('value', user.address);
+    document.getElementById('fname').setAttribute('value', user.name);
+    document.getElementById('lname').setAttribute('value', user.username);
+    document.getElementById('addr').setAttribute('value', user.password);
     document.getElementById('email2').setAttribute('value', user.email);
-    document.getElementById('st').setAttribute('value', user.state);
+    // document.getElementById('st').setAttribute('value', user.state);
   }
 
 }

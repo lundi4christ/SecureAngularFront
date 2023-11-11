@@ -18,11 +18,11 @@
         <tbody>
         <tr *ngFor="let user of userdetails">
           <td>{{ user.id }}</td>
-          <td>{{ user.firstname }}</td>
-          <td>{{ user.lastname }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.username }}</td>
           <td>{{ user.email }}</td>
-          <td>{{ user.address }}</td>
-          <td>{{ user.address }}, {{ user.state }}</td>
+          <td>{{ user.password }}</td>
+<!--          <td>{{ user.address }}, {{ user.state }}</td>-->
           <td><span><a href="#" (click)="openEdit(contentEdit, user)"><i class="fa fa-pen"></i></a>
             &nbsp; <a href="#" (click)="deleteUser(user)"><i class="fa fa-trash"></i></a> &nbsp;
           <a href="#" (click)="openDetails(contentDetail, user)"><i class="fa fa-book-open"></i></a></span></td>
