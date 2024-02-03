@@ -10,7 +10,7 @@ import {catchError, retry} from 'rxjs/operators';
 export class UsersService {
 
   constructor(private http: HttpClient) {}
-
+// GEt all users
   getUsersDetails(): Observable<User[]>{
     return this.http.get<User[]>('http://localhost:8180/api/auth/alluser')
       .pipe(retry(1), catchError(this.errorHandler));
