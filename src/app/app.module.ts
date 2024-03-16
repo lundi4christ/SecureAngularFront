@@ -18,10 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { DformsComponent } from './dforms/dforms.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-
-
-
-
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import {ButtonModule} from 'primeng/button';
 
 
 @NgModule({
@@ -48,6 +46,9 @@ import { HomeComponent } from './home/home.component';
     ModalModule.forRoot(),
     NgbModule,
     AppRoutingModule
+    // BrowserAnimationsModule
+//
+//    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

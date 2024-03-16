@@ -32,6 +32,8 @@
     "ngx-bootstrap": "^7.1.0",
     "ngx-bootstrap-modal": "^2.0.1",
     "nodemon": "^2.0.15",
+    "primeicons": "^6.0.1",
+    "primeng": "^17.8.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
