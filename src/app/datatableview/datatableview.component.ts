@@ -25,7 +25,7 @@ export class DatatableviewComponent implements OnInit {
 
   userdetails: User[];
 
-  // userss: User[] = new User();
+  /// userss: User[] = new User();
 
   usersList: any;
 
