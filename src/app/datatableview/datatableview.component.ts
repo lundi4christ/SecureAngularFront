@@ -42,7 +42,9 @@ export class DatatableviewComponent implements OnInit {
 
   ngOnInit(): void {
     // this.title = this.route.snapshot.data.title;
-
+    this.dtOptions = {
+      pagingType : 'full_numbers'
+    };
     this.getUsersDetails();
 
     this.saveuserForm = this.fb.group({
@@ -72,7 +74,7 @@ export class DatatableviewComponent implements OnInit {
       .subscribe((userdata) => {
         this.userdetails = userdata,
           // initiate our data table
-          this.dtTrigger.next();
+          this.dtTrigger.next(null);
         console.log(userdata);
       }, (error) => {
         console.log(error);
