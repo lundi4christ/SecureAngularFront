@@ -3,11 +3,16 @@
 <div class="background-container">
   <img [src]="backgroundImage" alt="Background Image" [ngStyle]="{'position': 'absolute', 'top': '0', 'left': '0', 'width': '100%', 'height': '100%'}">
   <!-- Your Angular application content goes here -->
-  <div class = "logindata">
+  <div class = "logindata" >
       <div class = "inputdata">
-        <input type="text" id="username" name="username" placeholder="username"><br><br>
-        <input type="text" id="password" name="password" placeholder="password"><br><br><br><br>
-        <button routerLink="/home">Login</button>
+        <form (ngSubmit)="login()">
+        <input type="text" id="username" [(ngModel)]="credentials.usernameOrEmail" name="username" placeholder="username"><br><br>
+        <input type="password" id="password" [(ngModel)]="credentials.password" name="password" placeholder="password"><br><br><br><br>
+        <button type="submit">Login</button>
+        </form>
+<!--        <button routerLink="/home">Login</button>-->
       </div>
   </div>
+<!--  <div *ngIf="error" class="error">{{ error }}</div>-->
+
 </div>
