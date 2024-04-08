@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginService} from '../services/login.service';
 import {Router} from '@angular/router';
+import {UsersService} from "../services/users.service";
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private loginService: LoginService, private router: Router) { }
+  constructor(private loginService: LoginService, private router: Router, private userService: UsersService) { }
   backgroundImage = 'assets/mylogin.jpg';
   credentials = {
     usernameOrEmail: '',
@@ -23,6 +24,7 @@ export class LoginComponent implements OnInit {
   login(){
     this.loginService.loginUser(this.credentials).subscribe(
     response => {
+      this.userService.setUser(response.user)
       this.router.navigate(['/home']);
     },
       /*error => {

@@ -9,6 +9,7 @@ import {catchError, retry} from 'rxjs/operators';
 })
 export class UsersService {
 
+  private user: any;
   constructor(private http: HttpClient) {}
 // GEt all users
   getUsersDetails(): Observable<User[]>{
@@ -18,6 +19,16 @@ export class UsersService {
 
   getUser(id: number): Observable<User> {
     return this.http.get<User>('http://localhost:8180/api/auth/getuser/' + id );
+  }
+
+  // tslint:disable-next-line:typedef
+  setUser(user: any){
+  this.user = user;
+  }
+
+  // tslint:disable-next-line:typedef
+  getCurrentUser(){
+  return this.user;
   }
 
   saveUser(theUser): Observable<User>{
