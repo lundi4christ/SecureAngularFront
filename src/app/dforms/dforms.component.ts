@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-dforms',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dforms.component.css']
 })
 export class DformsComponent implements OnInit {
+
+  @Input() depositLabel: string = 'Deposit Amount123';
 
   constructor() { }
   ngOnInit(): void {

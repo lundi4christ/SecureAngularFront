@@ -6,13 +6,32 @@
 
           <div class = "depositlink">
 
+            <p>Transactions</p>
             <p><a (click)="openModal()"><i class='fa fa-money-bill-wave'></i>&nbsp;&nbsp;&nbsp;Deposit</a></p>
-            <p><a (click)="openModal()"><i class='fa fa-money-check'></i>&nbsp;&nbsp;&nbsp;Withdrawal</a></p>
+            <p><a (click)="openDebitModal()"><i class='fa fa-money-check'></i>&nbsp;&nbsp;&nbsp;Withdrawal</a></p>
             <p><a (click)="openModal()"><i class='fa fa-book-reader'></i>&nbsp;&nbsp;&nbsp;Account Details</a></p>
             <p><a (click)="openModal()"><i class='fa fa-history'></i>&nbsp;&nbsp;&nbsp;Transaction History</a></p>
             <p><a (click)="openModal()"><i class='fa fa-people-arrows'></i>&nbsp;&nbsp;&nbsp;Transfer Funds</a></p>
             <p><a (click)="openModal()"><i class='fa fa-bookmark'></i>&nbsp;&nbsp;&nbsp;Account Statement</a></p>
             <p><a (click)="openModal()"><i class='fa fa-envelope-open'></i>&nbsp;&nbsp;&nbsp;Messages</a></p>
+
+            <div class="security">
+            </div><br/>
+            <p>Administration</p>
+            <p><a routerLink="/home/users"><i class='fa fa-user-check'></i>&nbsp;&nbsp;&nbsp;Users</a></p>
+            <p><a routerLink="/home/users"><i class='fa fa-user-astronaut'></i>&nbsp;&nbsp;&nbsp;Roles</a></p>
+            <p><a routerLink="/home/users"><i class='fa fa-accessible-icon'></i>&nbsp;&nbsp;&nbsp;Privileges</a></p>
+
+
+
+<!--            <div class="dropdown">
+                <select >
+                      <option disabled selected hidden>Security</option>
+                  <option value="Security"><a routerLink="/home/users">Users</a></option>
+                  <option value="Option1">Roles</option>
+                  <option value="Option2">Priviledges</option>
+                </select>
+            </div>-->
 
           </div>
         </div>

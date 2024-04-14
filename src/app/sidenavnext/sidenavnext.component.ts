@@ -9,13 +9,16 @@ import {DformsComponent} from '../dforms/dforms.component';
 })
 export class SidenavnextComponent implements OnInit {
 
+  depositLabel: string;
   constructor(private modalService: NgbModal) { }
   // tslint:disable-next-line:typedef
   openModal() {
     const modalRef = this.modalService.open(DformsComponent, { size: 'md' });
-    // Replace YOUR_MODAL_COMPONENT with the component you want to display in the modal.
-    // You need to import and pr
-    // ovide the component here.
+
+  }
+  openDebitModal() {
+    const modalRef = this.modalService.open(DformsComponent, { size: 'md' });
+    this.depositLabel = 'WITHDRAWALS';
   }
   ngOnInit(): void {
   }
