@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class DformsComponent implements OnInit {
 
-  @Input() depositLabel: string = 'Deposit Amount123';
+  @Input() depositLabel: string = 'Deposit Amount';
 
   constructor() { }
   ngOnInit(): void {
